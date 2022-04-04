@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="josep"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-03 07:58:30 PM"/>
+        <attribute name="created" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDQtMDM7MDc6MTY6MTcgUE07Mjg2NQ=="/>
+        <attribute name="edited" value="am9zZXA7REVTS1RPUC1PNjBGMlZHOzIwMjItMDQtMDM7MDc6NTg6MzAgUE07MTsyOTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="counter" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="1"/>
+            <assign variable="n2" expression="1"/>
+            <assign variable="sum" expression="0"/>
+            <declare name="fib" type="Integer" array="False" size=""/>
+            <for variable="fib" start="1" end="19" direction="inc" step="1">
+                <if expression="counter = 0">
+                    <then>
+                        <assign variable="n1" expression="n2"/>
+                        <assign variable="n2" expression="sum"/>
+                        <assign variable="sum" expression="n1 + n2"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Fib Series: &quot; &amp; sum" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
